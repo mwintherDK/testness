@@ -18,7 +18,9 @@ h6 {
 }
 
 li,
-p {
+p,
+blockquote,
+span {
   font-family: "Lato", sans-serif;
   line-height: 1.6;
 }
@@ -33,52 +35,20 @@ body {
   .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    background: $secondaryBgColor;
   }
 }
 
-// DELETE LIKE A MOFO
 header {
-  background-image: url("../img/header.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 20vw;
-
-  h1 {
-    margin-top: 0;
-    color: $secondaryColor;
-    font-size: 3rem;
-    transform: rotate(6deg) translateY(80px) translateX(50px);
-  }
+  font-size: 1rem;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  background: $secondaryBgColor;
-  color: $mainBgColor;
-  align-items: center;
-
-  ul {
-    display: flex;
-    list-style: none;
-
-    a {
-      color: $mainColor;
-      padding: 5px 10px;
-      font-size: 1.4rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  }
-
-  .social i {
-    margin: 0.5rem;
-  }
+  font-size: 1rem;
 }
 
 main {
   display: flex;
-  background: $secondaryBgColor;
 
   aside {
     width: 300px;
@@ -86,4 +56,8 @@ main {
   .slideshow {
     flex: 1;
   }
+}
+
+footer {
+  font-size: 1rem;
 }
