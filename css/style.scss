@@ -13,41 +13,64 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Baloo Chettan 2", cursive;
-  line-height: 1.4;
+	font-family: "Baloo Chettan 2", cursive;
+	line-height: 1.4;
 }
 
 li,
 p,
 blockquote,
 span {
-  font-family: "Lato", sans-serif;
-  line-height: 1.6;
+	font-family: "Lato", sans-serif;
+	line-height: 1.6;
 }
 
 // Generelle regler
 body {
-  margin: 0;
-  box-sizing: border-box;
-  background-color: $mainBgColor;
-  color: $mainBgColor;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: $mainBgColor;
+	color: $mainBgColor;
 
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: $secondaryBgColor;
-  }
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		background: $secondaryBgColor;
+	}
 }
 
 header {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 nav {
-  font-size: 1rem;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	ul {
+		display: flex;
+		list-style: none;
+		width: 25vw;
+		justify-content: space-between;
+	}
+	a {
+		color: rgb(60, 168, 218);
+		text-align: center;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 22px;
+	}
+	.social {
+		width: 8%;
+		i {
+			margin-left: 14%;
+		}
+	}
 }
 
 main {
+
   display: flex;
 
   aside {
@@ -57,8 +80,9 @@ main {
   .slideshow {
     flex: 1;
   }
+
 }
 
 footer {
-  font-size: 1rem;
+	font-size: 1rem;
 }
