@@ -54,6 +54,14 @@ main .slideshow {
       -ms-flex: 1;
           flex: 1;
 }
+main .slideshow img{
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+}
+main .slideshow img.show{
+  opacity: 1;
+}
 
 footer {
   font-size: 1rem;
