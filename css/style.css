@@ -32,7 +32,70 @@ body .wrapper {
 }
 
 header {
-  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-image: url(../img/header.jpg);
+  height: 400px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 40px;
+  color: #bf5e40;
+  padding-top: 30px;
+  padding-left: 80px;
+  top: 0;
+  position: absolute;
+  -webkit-animation: wave1 10s infinite;
+          animation: wave1 10s infinite;
+}
+
+@-webkit-keyframes wave1 {
+  0% {
+    -webkit-transform: translateY(10%) rotate(6deg);
+            transform: translateY(10%) rotate(6deg);
+  }
+  20% {
+    -webkit-transform: translateY(10%) rotate(-2deg);
+            transform: translateY(10%) rotate(-2deg);
+  }
+  60% {
+    -webkit-transform: translateY(10%) rotate(6deg);
+            transform: translateY(10%) rotate(6deg);
+  }
+  80% {
+    -webkit-transform: translateY(10%) rotate(-2deg);
+            transform: translateY(10%) rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: translateY(10%) rotate(6deg);
+            transform: translateY(10%) rotate(6deg);
+  }
+}
+
+@keyframes wave1 {
+  0% {
+    -webkit-transform: translateY(10%) rotate(6deg);
+            transform: translateY(10%) rotate(6deg);
+  }
+  20% {
+    -webkit-transform: translateY(10%) rotate(-2deg);
+            transform: translateY(10%) rotate(-2deg);
+  }
+  60% {
+    -webkit-transform: translateY(10%) rotate(6deg);
+            transform: translateY(10%) rotate(6deg);
+  }
+  80% {
+    -webkit-transform: translateY(10%) rotate(-2deg);
+            transform: translateY(10%) rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: translateY(10%) rotate(6deg);
+            transform: translateY(10%) rotate(6deg);
+  }
 }
 
 nav {
