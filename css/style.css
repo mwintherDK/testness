@@ -56,6 +56,51 @@ main .slideshow {
 }
 
 footer {
-  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 270px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer i {
+  color: #4095bf;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+footer .citat {
+  font-size: 1.2rem;
+}
+
+footer .quote {
+  color: gray;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */

@@ -59,5 +59,30 @@ main {
 }
 
 footer {
-  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    justify-content: space-around;
+  }
+  li{
+    display: flex;
+    align-items: center;
+  }
+  i{
+    color: $mainColor;
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .citat{
+    font-size: 1.2rem;
+  }
+  .quote{
+    color: gray;
+    font-style: italic;
+  }
 }
