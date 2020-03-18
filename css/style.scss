@@ -13,52 +13,114 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Baloo Chettan 2", cursive;
-  line-height: 1.4;
+	font-family: "Baloo Chettan 2", cursive;
+	line-height: 1.4;
 }
 
 li,
 p,
 blockquote,
 span {
-  font-family: "Lato", sans-serif;
-  line-height: 1.6;
+	font-family: "Lato", sans-serif;
+	line-height: 1.6;
 }
 
 // Generelle regler
 body {
-  margin: 0;
-  box-sizing: border-box;
-  background-color: $mainBgColor;
-  color: $mainBgColor;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: $mainBgColor;
+	color: $mainBgColor;
 
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: $secondaryBgColor;
-  }
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		background: $secondaryBgColor;
+	}
 }
 
 header {
-  font-size: 1rem;
+
+  display: flex;
+  position: relative;
+  background-image: url(../img/header.jpg);
+  height: 400px;
+  width: 100%;
+
+  h1{
+    font-size: 40px;
+    color: $secondaryColor;
+    padding-top: 30px;
+    padding-left:80px;
+    top: 0;
+    position: absolute;
+    animation: wave1 10s infinite;
+  }
+  @keyframes wave1 {
+    0%{
+      transform: translateY(10%) rotate(6deg);
+    }
+    20%{
+      transform: translateY(10%) rotate(-2deg);
+    }
+    60%{
+      transform: translateY(10%) rotate(6deg);
+    }
+ 
+    80%{
+      transform: translateY(10%) rotate(-2deg);
+    }
+    100%{
+      transform: translateY(10%) rotate(6deg);
+    }
+  }
+    
+
 }
 
+
 nav {
-  font-size: 1rem;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	ul {
+		display: flex;
+		list-style: none;
+		width: 25vw;
+		justify-content: space-between;
+	}
+	a {
+		color: rgb(60, 168, 218);
+		text-align: center;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 22px;
+	}
+	.social {
+		width: 8%;
+		i {
+			margin-left: 14%;
+		}
+	}
 }
 
 main {
+
   display: flex;
 
   aside {
     width: 300px;
+    
   }
   .slideshow {
     flex: 1;
   }
+
 }
 
 footer {
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -85,4 +147,5 @@ footer {
     color: gray;
     font-style: italic;
   }
+
 }
