@@ -37,6 +37,42 @@ header {
 
 nav {
   font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 25vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav a {
+  color: #3ca8da;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+nav .social {
+  width: 8%;
+}
+
+nav .social i {
+  margin-left: 14%;
 }
 
 main {
