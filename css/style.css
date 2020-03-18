@@ -83,6 +83,25 @@ main {
 
 main aside {
   width: 300px;
+  
+}
+
+input{
+  background-color: darkorange;
+  border: none;
+  color: white;
+  border-radius: 5%;
+  padding: 1% 2%;
+  margin: 5% 2%;
+}
+#submitbtn{
+  width: 80%;
+  margin: 0 5%;
+}
+form div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 main .slideshow {
