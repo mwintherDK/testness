@@ -97,15 +97,13 @@ main {
 
 /* Hvordan roterer man billeder ned fra en bestemt position - så de ikke roterer fra midten af billedet? */
 .container > *:hover img {
-	overflow: hidden;
 	top: 0px;
 	animation-name: run;
-	animation-duration: 1s;
+	animation-duration: 0.25s;
 }
 
 .container > *:not(:hover) img {
-	transition: all 0.5s 0.5s;
-	top: 400px;
+	transition: all 0.25s 0.5s;
 }
 
 @keyframes run {

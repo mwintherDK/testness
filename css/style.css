@@ -117,18 +117,16 @@ main {
 /* Hvordan roterer man billeder ved :hover over billedet eller dens <div>? Hint: css transform */
 /* Hvordan roterer man billeder ned fra en bestemt position - så de ikke roterer fra midten af billedet? */
 .container > *:hover img {
-  overflow: hidden;
   top: 0px;
   -webkit-animation-name: run;
           animation-name: run;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
 }
 
 .container > *:not(:hover) img {
-  -webkit-transition: all 0.5s 0.5s;
-  transition: all 0.5s 0.5s;
-  top: 400px;
+  -webkit-transition: all 0.25s 0.5s;
+  transition: all 0.25s 0.5s;
 }
 
 @-webkit-keyframes run {
