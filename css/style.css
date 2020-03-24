@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* 
 header: black, white
 nav: #ef3d4d, white
@@ -8,11 +7,11 @@ main: #24344b white
 .extra: #47bb94, black
 .banner: #fed269, black
 */
+
 .container {
   width: 1200px;
   margin: 0 auto;
   background: #eee;
-  display: -ms-grid;
   display: grid;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -23,23 +22,15 @@ main: #24344b white
 /*  */
 /*  */
 .container {
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   height: 95vh;
 }
 
 .container > * {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -50,51 +41,37 @@ header {
 nav {
   background: #ef3d4d;
   color: white;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
   grid-column: 2 / 5;
 }
 
 .hero {
   background: #4c86c6;
   color: white;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-column: 1 / 5;
 }
 
 main {
   background: #24344b;
   color: white;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-column: 1 / 3;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
   grid-row: 3 / 5;
 }
 
 .image {
   background: #c1e4e6;
   color: black;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
   grid-column: 4 / 5;
 }
 
 .extra {
   background: #47bb94;
   color: black;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
   grid-column: 4 / 5;
 }
 
 .banner {
   background: #fed269;
   color: black;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-column: 1 / 5;
 }
 
@@ -104,4 +81,3 @@ main {
 /* Hvordan roterer man billeder ned fra en bestemt position - så de ikke roterer fra midten af billedet? */
 /* Hvordan sørger man for at billedernes rotation sker med en overgang? */
 /* Hvordan sørger man for der ikke er delay når man hover over billeder, men der er delay når man "forlader" billedet? */
-/*# sourceMappingURL=style.css.map */
