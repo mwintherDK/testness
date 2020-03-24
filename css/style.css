@@ -1,232 +1,107 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Lato&display=swap");
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Baloo Chettan 2", cursive;
-  line-height: 1.4;
-}
-
-li,
-p,
-blockquote,
-span {
-  font-family: "Lato", sans-serif;
-  line-height: 1.6;
-}
-
-body {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #1c1c1c;
-  color: #1c1c1c;
-}
-
-body .wrapper {
-  max-width: 1200px;
+@charset "UTF-8";
+/* 
+header: black, white
+nav: #ef3d4d, white
+.hero: #4c86c6, white
+main: #24344b white
+.image: #c1e4e6, black
+.extra: #47bb94, black
+.banner: #fed269, black
+*/
+.container {
+  width: 1200px;
   margin: 0 auto;
-  background: #cccccc;
+  background: #eee;
+  display: -ms-grid;
+  display: grid;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*  */
+/*  */
+.container {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  height: 95vh;
+}
+
+.container > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  background-image: url(../img/header.jpg);
-  height: 400px;
-  width: 100%;
-}
-
-header h1 {
-  font-size: 40px;
-  color: #bf5e40;
-  padding-top: 30px;
-  padding-left: 80px;
-  top: 0;
-  position: absolute;
-  -webkit-animation: wave1 10s infinite;
-          animation: wave1 10s infinite;
-}
-
-@-webkit-keyframes wave1 {
-  0% {
-    -webkit-transform: translateY(10%) rotate(6deg);
-            transform: translateY(10%) rotate(6deg);
-  }
-  20% {
-    -webkit-transform: translateY(10%) rotate(-2deg);
-            transform: translateY(10%) rotate(-2deg);
-  }
-  60% {
-    -webkit-transform: translateY(10%) rotate(6deg);
-            transform: translateY(10%) rotate(6deg);
-  }
-  80% {
-    -webkit-transform: translateY(10%) rotate(-2deg);
-            transform: translateY(10%) rotate(-2deg);
-  }
-  100% {
-    -webkit-transform: translateY(10%) rotate(6deg);
-            transform: translateY(10%) rotate(6deg);
-  }
-}
-
-@keyframes wave1 {
-  0% {
-    -webkit-transform: translateY(10%) rotate(6deg);
-            transform: translateY(10%) rotate(6deg);
-  }
-  20% {
-    -webkit-transform: translateY(10%) rotate(-2deg);
-            transform: translateY(10%) rotate(-2deg);
-  }
-  60% {
-    -webkit-transform: translateY(10%) rotate(6deg);
-            transform: translateY(10%) rotate(6deg);
-  }
-  80% {
-    -webkit-transform: translateY(10%) rotate(-2deg);
-            transform: translateY(10%) rotate(-2deg);
-  }
-  100% {
-    -webkit-transform: translateY(10%) rotate(6deg);
-            transform: translateY(10%) rotate(6deg);
-  }
+  background: black;
+  color: white;
 }
 
 nav {
-  font-size: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background: #ef3d4d;
+  color: white;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
 }
 
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  width: 25vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-nav a {
-  color: #3ca8da;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 22px;
-}
-
-nav .social {
-  width: 8%;
-}
-
-nav .social i {
-  margin-left: 14%;
+.hero {
+  background: #4c86c6;
+  color: white;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main aside {
-  width: 300px;
-  
-}
-
-input{
-  background-color: darkorange;
-  border: none;
+  background: #24344b;
   color: white;
-  border-radius: 5%;
-  padding: 1% 2%;
-  margin: 5% 2%;
-}
-#submitbtn{
-  width: 80%;
-  margin: 0 5%;
-}
-form div{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / 5;
 }
 
-main .slideshow {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-main .slideshow img{
-  opacity: 0;
-  transition: 1s;
-  position: absolute;
-}
-main .slideshow img.show{
-  opacity: 1;
+.image {
+  background: #c1e4e6;
+  color: black;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.extra {
+  background: #47bb94;
+  color: black;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
 }
 
-footer ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 270px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.banner {
+  background: #fed269;
+  color: black;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
 }
 
-footer li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer i {
-  color: #4095bf;
-  font-size: 2rem;
-  padding: 10px;
-}
-
-footer .citat {
-  font-size: 1.2rem;
-}
-
-footer .quote {
-  color: gray;
-  font-style: italic;
-}
+/* Hvad vi søger: http://maha.aspitcloud.dk/aspelev/videoer/andet/css3AnimationGallery.gif  */
+/* Hvordan indsætter man billeder så de ligner baggrundsbilleder, men er <img>? - hint object-fit og object-position */
+/* Hvordan roterer man billeder ved :hover over billedet eller dens <div>? Hint: css transform */
+/* Hvordan roterer man billeder ned fra en bestemt position - så de ikke roterer fra midten af billedet? */
+/* Hvordan sørger man for at billedernes rotation sker med en overgang? */
+/* Hvordan sørger man for der ikke er delay når man hover over billeder, men der er delay når man "forlader" billedet? */
 /*# sourceMappingURL=style.css.map */

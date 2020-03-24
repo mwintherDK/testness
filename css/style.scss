@@ -1,151 +1,83 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Lato&display=swap");
+/* 
+header: black, white
+nav: #ef3d4d, white
+.hero: #4c86c6, white
+main: #24344b white
+.image: #c1e4e6, black
+.extra: #47bb94, black
+.banner: #fed269, black
+*/
 
-// Variabler
-$mainColor: hsla(200, 50%, 50%, 1);
-$secondaryColor: hsl(14, 50%, 50%);
-$mainBgColor: hsl(0, 0%, 11%);
-$secondaryBgColor: hsl(0, 0%, 80%);
-
-// Typografi
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Baloo Chettan 2", cursive;
-	line-height: 1.4;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background: #eee;
+  display: grid;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-li,
-p,
-blockquote,
-span {
-	font-family: "Lato", sans-serif;
-	line-height: 1.6;
+/*  */
+/*  */
+.container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 95vh;
 }
 
-// Generelle regler
-body {
-	margin: 0;
-	box-sizing: border-box;
-	background-color: $mainBgColor;
-	color: $mainBgColor;
-
-	.wrapper {
-		max-width: 1200px;
-		margin: 0 auto;
-		background: $secondaryBgColor;
-	}
+.container > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
-
-  display: flex;
-  position: relative;
-  background-image: url(../img/header.jpg);
-  height: 400px;
-  width: 100%;
-
-  h1{
-    font-size: 40px;
-    color: $secondaryColor;
-    padding-top: 30px;
-    padding-left:80px;
-    top: 0;
-    position: absolute;
-    animation: wave1 10s infinite;
-  }
-  @keyframes wave1 {
-    0%{
-      transform: translateY(10%) rotate(6deg);
-    }
-    20%{
-      transform: translateY(10%) rotate(-2deg);
-    }
-    60%{
-      transform: translateY(10%) rotate(6deg);
-    }
- 
-    80%{
-      transform: translateY(10%) rotate(-2deg);
-    }
-    100%{
-      transform: translateY(10%) rotate(6deg);
-    }
-  }
-    
-
+  background: black;
+  color: white;
 }
 
-
 nav {
-	font-size: 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	ul {
-		display: flex;
-		list-style: none;
-		width: 25vw;
-		justify-content: space-between;
-	}
-	a {
-		color: rgb(60, 168, 218);
-		text-align: center;
-		text-decoration: none;
-		font-weight: 600;
-		font-size: 22px;
-	}
-	.social {
-		width: 8%;
-		i {
-			margin-left: 14%;
-		}
-	}
+  background: #ef3d4d;
+  color: white;
+  grid-column: 2 / 5;
+}
+
+.hero {
+  background: #4c86c6;
+  color: white;
+  grid-column: 1 / 5;
 }
 
 main {
-
-  display: flex;
-
-  aside {
-    width: 300px;
-    
-  }
-  .slideshow {
-    flex: 1;
-  }
-
+  background: #24344b;
+  color: white;
+  grid-column: 1 / 3;
+  grid-row: 3 / 5;
 }
 
-footer {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    height: 270px;
-    justify-content: space-around;
-  }
-  li{
-    display: flex;
-    align-items: center;
-  }
-  i{
-    color: $mainColor;
-    font-size: 2rem;
-    padding: 10px;
-  }
-  .citat{
-    font-size: 1.2rem;
-  }
-  .quote{
-    color: gray;
-    font-style: italic;
-  }
-
+.image {
+  background: #c1e4e6;
+  color: black;
+  grid-column: 4 / 5;
 }
+
+.extra {
+  background: #47bb94;
+  color: black;
+  grid-column: 4 / 5;
+}
+
+.banner {
+  background: #fed269;
+  color: black;
+  grid-column: 1 / 5;
+}
+
+/* Hvad vi søger: http://maha.aspitcloud.dk/aspelev/videoer/andet/css3AnimationGallery.gif  */
+/* Hvordan indsætter man billeder så de ligner baggrundsbilleder, men er <img>? - hint object-fit og object-position */
+/* Hvordan roterer man billeder ved :hover over billedet eller dens <div>? Hint: css transform */
+/* Hvordan roterer man billeder ned fra en bestemt position - så de ikke roterer fra midten af billedet? */
+/* Hvordan sørger man for at billedernes rotation sker med en overgang? */
+/* Hvordan sørger man for der ikke er delay når man hover over billeder, men der er delay når man "forlader" billedet? */
